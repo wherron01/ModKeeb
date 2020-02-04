@@ -289,7 +289,7 @@ $EndComp
 Text GLabel 2150 1450 2    50   Output ~ 0
 SDA
 Text GLabel 2150 1650 2    50   Output ~ 0
-SDA
+SCL
 $Comp
 L power:+5V #PWR0107
 U 1 1 5E3A2531

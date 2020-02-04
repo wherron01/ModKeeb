@@ -587,4 +587,46 @@ Wire Wire Line
 	5000 2900 5000 3150
 Text Label 6950 4600 0    50   ~ 0
 HWB
+$Comp
+L Device:R R7
+U 1 1 5E397AAF
+P 7550 3000
+F 0 "R7" H 7620 3046 50  0000 L CNN
+F 1 "4k7" H 7620 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7480 3000 50  0001 C CNN
+F 3 "~" H 7550 3000 50  0001 C CNN
+	1    7550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5E397C20
+P 7800 3000
+F 0 "R8" H 7870 3046 50  0000 L CNN
+F 1 "4k7" H 7870 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 3000 50  0001 C CNN
+F 3 "~" H 7800 3000 50  0001 C CNN
+	1    7800 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2850 7700 2850
+Text GLabel 7550 3150 0    50   Input ~ 0
+SDA
+Text GLabel 7800 3150 2    50   Input ~ 0
+SCL
+$Comp
+L power:+5V #PWR0114
+U 1 1 5E398BE5
+P 7700 2850
+F 0 "#PWR0114" H 7700 2700 50  0001 C CNN
+F 1 "+5V" H 7715 3023 50  0000 C CNN
+F 2 "" H 7700 2850 50  0001 C CNN
+F 3 "" H 7700 2850 50  0001 C CNN
+	1    7700 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 7700 2850
+Wire Wire Line
+	7700 2850 7800 2850
 $EndSCHEMATC

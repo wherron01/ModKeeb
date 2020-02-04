@@ -411,7 +411,7 @@ AR Path="/5E31F479" Ref="U1"  Part="1"
 AR Path="/5E2DB80C/5E31F479" Ref="U?"  Part="1" 
 F 0 "U1" V 6200 3200 50  0000 C CNN
 F 1 "ATmega32U4-AU" V 6300 3200 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 6350 4000 50  0001 C CIN
+F 2 "modkey:TQFP-44_10x10mm_P0.8mm" H 6350 4000 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 6350 4000 50  0001 C CNN
 	1    6350 4000
 	1    0    0    -1  
@@ -587,4 +587,46 @@ Wire Wire Line
 	5000 2900 5000 3150
 Text Label 6950 4600 0    50   ~ 0
 HWB
+$Comp
+L Device:R R?
+U 1 1 5E397AAF
+P 7550 3000
+F 0 "R?" H 7620 3046 50  0000 L CNN
+F 1 "4k7" H 7620 2955 50  0000 L CNN
+F 2 "" V 7480 3000 50  0001 C CNN
+F 3 "~" H 7550 3000 50  0001 C CNN
+	1    7550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E397C20
+P 7800 3000
+F 0 "R?" H 7870 3046 50  0000 L CNN
+F 1 "4k7" H 7870 2955 50  0000 L CNN
+F 2 "" V 7730 3000 50  0001 C CNN
+F 3 "~" H 7800 3000 50  0001 C CNN
+	1    7800 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2850 7700 2850
+Text GLabel 7550 3150 0    50   Input ~ 0
+SDA
+Text GLabel 7800 3150 2    50   Input ~ 0
+SCL
+$Comp
+L power:+5V #PWR?
+U 1 1 5E398BE5
+P 7700 2850
+F 0 "#PWR?" H 7700 2700 50  0001 C CNN
+F 1 "+5V" H 7715 3023 50  0000 C CNN
+F 2 "" H 7700 2850 50  0001 C CNN
+F 3 "" H 7700 2850 50  0001 C CNN
+	1    7700 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 7700 2850
+Wire Wire Line
+	7700 2850 7800 2850
 $EndSCHEMATC
