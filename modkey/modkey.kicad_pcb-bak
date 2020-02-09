@@ -2,10 +2,10 @@
 
   (general
     (thickness 1.6)
-    (drawings 22)
-    (tracks 169)
+    (drawings 26)
+    (tracks 185)
     (zones 0)
-    (modules 12)
+    (modules 16)
     (nets 12)
   )
 
@@ -126,6 +126,162 @@
     (add_net GND)
     (add_net SCL)
     (add_net SDA)
+  )
+
+  (module modkey:edgeconnector (layer B.Cu) (tedit 5E3916DF) (tstamp 5E3FF1BE)
+    (at 175.025 83.865 90)
+    (path /5E3982F0)
+    (fp_text reference J2 (at 2.15 3.1 90) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Conn_01x04 (at 2.125 -0.875 90) (layer B.Fab)
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad 1 thru_hole custom (at -1.5 2 90) (size 0.75 0.75) (drill 0.3) (layers *.Cu *.Mask)
+      (zone_connect 0)
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_poly (pts
+           (xy 0.375 -2) (xy -0.375 -2) (xy -0.375 0) (xy 0.375 0)) (width 0))
+      ))
+    (pad 2 thru_hole custom (at -0.5 2 90) (size 0.75 0.75) (drill 0.3) (layers *.Cu *.Mask)
+      (zone_connect 0)
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_poly (pts
+           (xy 0.375 -2) (xy -0.375 -2) (xy -0.375 0) (xy 0.375 0)) (width 0))
+      ))
+    (pad 3 thru_hole custom (at 0.5 2 90) (size 0.75 0.75) (drill 0.3) (layers *.Cu *.Mask)
+      (zone_connect 0)
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_poly (pts
+           (xy 0.375 -2) (xy -0.375 -2) (xy -0.375 0) (xy 0.375 0)) (width 0))
+      ))
+    (pad 4 thru_hole custom (at 1.5 2 90) (size 0.75 0.75) (drill 0.3) (layers *.Cu *.Mask)
+      (zone_connect 0)
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_poly (pts
+           (xy 0.375 -2) (xy -0.375 -2) (xy -0.375 0) (xy 0.375 0)) (width 0))
+      ))
+  )
+
+  (module modkey:edgeconnector (layer F.Cu) (tedit 5E3916DF) (tstamp 5E3FF1AE)
+    (at 194.235 83.865 90)
+    (path /5E398874)
+    (fp_text reference J4 (at 2.15 -3.1 270) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Conn_01x04 (at 2.125 0.875 270) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole custom (at -1.5 -2 90) (size 0.75 0.75) (drill 0.3) (layers *.Cu *.Mask)
+      (zone_connect 0)
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_poly (pts
+           (xy 0.375 2) (xy -0.375 2) (xy -0.375 0) (xy 0.375 0)) (width 0))
+      ))
+    (pad 2 thru_hole custom (at -0.5 -2 90) (size 0.75 0.75) (drill 0.3) (layers *.Cu *.Mask)
+      (zone_connect 0)
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_poly (pts
+           (xy 0.375 2) (xy -0.375 2) (xy -0.375 0) (xy 0.375 0)) (width 0))
+      ))
+    (pad 3 thru_hole custom (at 0.5 -2 90) (size 0.75 0.75) (drill 0.3) (layers *.Cu *.Mask)
+      (zone_connect 0)
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_poly (pts
+           (xy 0.375 2) (xy -0.375 2) (xy -0.375 0) (xy 0.375 0)) (width 0))
+      ))
+    (pad 4 thru_hole custom (at 1.5 -2 90) (size 0.75 0.75) (drill 0.3) (layers *.Cu *.Mask)
+      (zone_connect 0)
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_poly (pts
+           (xy 0.375 2) (xy -0.375 2) (xy -0.375 0) (xy 0.375 0)) (width 0))
+      ))
+  )
+
+  (module modkey:edgeconnector (layer F.Cu) (tedit 5E3916DF) (tstamp 5E3FF1A6)
+    (at 184.625 93.47)
+    (path /5E39851A)
+    (fp_text reference J3 (at 2.15 -3.1 180) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Conn_01x04 (at 2.125 0.875 180) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole custom (at -1.5 -2) (size 0.75 0.75) (drill 0.3) (layers *.Cu *.Mask)
+      (zone_connect 0)
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_poly (pts
+           (xy 0.375 2) (xy -0.375 2) (xy -0.375 0) (xy 0.375 0)) (width 0))
+      ))
+    (pad 2 thru_hole custom (at -0.5 -2) (size 0.75 0.75) (drill 0.3) (layers *.Cu *.Mask)
+      (zone_connect 0)
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_poly (pts
+           (xy 0.375 2) (xy -0.375 2) (xy -0.375 0) (xy 0.375 0)) (width 0))
+      ))
+    (pad 3 thru_hole custom (at 0.5 -2) (size 0.75 0.75) (drill 0.3) (layers *.Cu *.Mask)
+      (zone_connect 0)
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_poly (pts
+           (xy 0.375 2) (xy -0.375 2) (xy -0.375 0) (xy 0.375 0)) (width 0))
+      ))
+    (pad 4 thru_hole custom (at 1.5 -2) (size 0.75 0.75) (drill 0.3) (layers *.Cu *.Mask)
+      (zone_connect 0)
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_poly (pts
+           (xy 0.375 2) (xy -0.375 2) (xy -0.375 0) (xy 0.375 0)) (width 0))
+      ))
+  )
+
+  (module modkey:edgeconnector (layer B.Cu) (tedit 5E3916DF) (tstamp 5E3FF19D)
+    (at 184.625 74.265)
+    (path /5E397BD7)
+    (fp_text reference J1 (at 2.15 3.1 180) (layer B.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Conn_01x04 (at 2.125 -0.875 180) (layer B.Fab)
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (pad 1 thru_hole custom (at -1.5 2) (size 0.75 0.75) (drill 0.3) (layers *.Cu *.Mask)
+      (zone_connect 0)
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_poly (pts
+           (xy 0.375 -2) (xy -0.375 -2) (xy -0.375 0) (xy 0.375 0)) (width 0))
+      ))
+    (pad 2 thru_hole custom (at -0.5 2) (size 0.75 0.75) (drill 0.3) (layers *.Cu *.Mask)
+      (zone_connect 0)
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_poly (pts
+           (xy 0.375 -2) (xy -0.375 -2) (xy -0.375 0) (xy 0.375 0)) (width 0))
+      ))
+    (pad 3 thru_hole custom (at 0.5 2) (size 0.75 0.75) (drill 0.3) (layers *.Cu *.Mask)
+      (zone_connect 0)
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_poly (pts
+           (xy 0.375 -2) (xy -0.375 -2) (xy -0.375 0) (xy 0.375 0)) (width 0))
+      ))
+    (pad 4 thru_hole custom (at 1.5 2) (size 0.75 0.75) (drill 0.3) (layers *.Cu *.Mask)
+      (zone_connect 0)
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_poly (pts
+           (xy 0.375 -2) (xy -0.375 -2) (xy -0.375 0) (xy 0.375 0)) (width 0))
+      ))
   )
 
   (module modkey:edgeconnector (layer F.Cu) (tedit 5E3916DF) (tstamp 5E39E5BA)
@@ -498,7 +654,7 @@
     (fp_text reference R2 (at 0 1.65) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 4k7 (at 0 -1.65) (layer B.Fab)
+    (fp_text value Open (at 0 -1.65) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0) (layer B.Fab)
@@ -534,7 +690,7 @@
     (fp_text reference R1 (at 0 1.65) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 4k7 (at 0 -1.65) (layer B.Fab)
+    (fp_text value Open (at 0 -1.65) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0) (layer B.Fab)
@@ -604,6 +760,10 @@
     )
   )
 
+  (gr_line (start 194.15 74.34) (end 194.15 93.39) (layer Edge.Cuts) (width 0.15) (tstamp 5E3FF1C7))
+  (gr_line (start 175.1 74.34) (end 194.15 74.34) (layer Edge.Cuts) (width 0.15) (tstamp 5E3FF1BC))
+  (gr_line (start 175.1 93.39) (end 175.1 74.34) (layer Edge.Cuts) (width 0.15) (tstamp 5E3FF1B6))
+  (gr_line (start 194.15 93.39) (end 175.1 93.39) (layer Edge.Cuts) (width 0.15) (tstamp 5E3FF1B5))
   (gr_line (start 132.39 94.5) (end 132.39 75.45) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 151.44 94.5) (end 132.39 94.5) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 151.44 75.45) (end 151.44 94.5) (layer Edge.Cuts) (width 0.15))
@@ -627,6 +787,22 @@
   (gr_line (start 144.625 88.7) (end 144.625 90.95) (layer Dwgs.User) (width 0.12) (tstamp 5E3901D1))
   (gr_line (start 149.425 92.45) (end 149.425 77.45) (layer Dwgs.User) (width 0.15) (tstamp 5E3901D0))
 
+  (via (at 183.135 74.34) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0) (tstamp 5E3FF19B))
+  (via (at 175.11 85.365) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0) (tstamp 5E3FF19C))
+  (via (at 183.135 93.39) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0) (tstamp 5E3FF1AD))
+  (via (at 194.16 85.365) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0) (tstamp 5E3FF1C5))
+  (via (at 186.135 93.39) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0) (tstamp 5E3FF199))
+  (via (at 175.11 82.365) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0) (tstamp 5E3FF19A))
+  (via (at 186.135 74.365) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0) (tstamp 5E3FF1B7))
+  (via (at 194.16 82.34) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0) (tstamp 5E3FF1C8))
+  (via (at 185.135 74.34) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0) (tstamp 5E3FF1B9))
+  (via (at 185.135 93.39) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0) (tstamp 5E3FF1BA))
+  (via (at 175.11 83.365) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0) (tstamp 5E3FF1BD))
+  (via (at 194.16 83.365) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0) (tstamp 5E3FF1C6))
+  (via (at 184.135 93.39) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0) (tstamp 5E3FF1A4))
+  (via (at 194.16 84.365) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0) (tstamp 5E3FF1A5))
+  (via (at 184.11 74.34) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0) (tstamp 5E3FF1B8))
+  (via (at 175.11 84.365) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0) (tstamp 5E3FF1BB))
   (via (at 140.425 75.45) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (via (at 132.4 86.475) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (via (at 140.425 94.5) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
@@ -656,7 +832,7 @@
   (segment (start 137.04957 86.475) (end 138.05251 85.47206) (width 0.25) (layer F.Cu) (net 1))
   (segment (start 134.315 86.475) (end 137.04957 86.475) (width 0.25) (layer F.Cu) (net 1))
   (segment (start 137.65 89.025) (end 140.92 89.025) (width 0.25) (layer F.Cu) (net 1) (tstamp 5E3A0D7F))
-  (via (at 137.65 89.025) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (status 1000000))
+  (via (at 137.65 89.025) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (via (at 141.675 81.925) (size 0.508) (drill 0.254) (layers F.Cu B.Cu) (net 2))
   (via (at 146.125 92.85) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))
   (via (at 143.425 75.475) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))
