@@ -461,7 +461,7 @@ F 3 "~" H 5000 3500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:USB_C_Receptacle J1
+L modctrl-rescue:USB_C_Receptacle-Connector J1
 U 1 1 5E31F494
 P 4250 4300
 AR Path="/5E31F494" Ref="J1"  Part="1" 
